@@ -1,0 +1,8 @@
+模擬方式:
+	(1) RTL simulation
+		指令: make sim
+		File list: sim_rtl.f
+	(2) Gate level simulation
+		指令: make syn
+		File list: sim_gate.f
+所有模擬所需檔案(RTL code, netlist, SDF)的路徑都已寫好，不需做更動即可直接模擬。

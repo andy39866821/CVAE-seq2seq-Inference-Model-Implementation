@@ -1,0 +1,123 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Dec 29, 2021 at 22:31:44 CST
+ncverilog
+	-f sim_rtl.f
+		CVAE_tb.v
+		../source/CVAE_top.v
+		../source/FullyConnection.v
+		../source/GRU.v
+		../source/Cordic.v
+		../source/VLC.v
+		../source/P_RHC.v
+		../source/NP_RHC.v
+		sram_model/rams_sp_wf.v
+		+access+r
+file: CVAE_tb.v
+	module worklib.CVAE_tb:v
+		errors: 0, warnings: 0
+file: ../source/CVAE_top.v
+	module worklib.CVAE_top:v
+		errors: 0, warnings: 0
+file: sram_model/rams_sp_wf.v
+	module worklib.rams_sp_wf:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: 
+        $readmemh(file_name, RAM);
+                               |
+ncelab: *W,MEMODR (./sram_model/rams_sp_wf.v,35|31): $readmem default memory order incompatible with IEEE1364.
+        $readmemh(file_name, RAM);
+                               |
+ncelab: *W,MEMODR (./sram_model/rams_sp_wf.v,35|31): $readmem default memory order incompatible with IEEE1364.
+        $readmemh(file_name, RAM);
+                               |
+ncelab: *W,MEMODR (./sram_model/rams_sp_wf.v,35|31): $readmem default memory order incompatible with IEEE1364.
+.................... Done
+	Generating native compiled code:
+		worklib.CVAE_tb:v <0x0600168c>
+			streams:  16, words: 28290
+		worklib.CVAE_top:v <0x4adfc3aa>
+			streams:  99, words: 44610
+		worklib.rams_sp_wf:v <0x2c54e16d>
+			streams:   4, words:  1821
+		worklib.rams_sp_wf:v <0x405cf68e>
+			streams:   4, words:  1821
+		worklib.rams_sp_wf:v <0x7f6dc9f7>
+			streams:   4, words:  1768
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 130       9
+		Registers:               847     191
+		Scalar wires:             15       -
+		Vectored wires:          597       -
+		Always blocks:           798     144
+		Initial blocks:            9       9
+		Cont. assignments:       194      13
+		Pseudo assignments:        4       4
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.CVAE_tb:v
+Loading snapshot worklib.CVAE_tb:v .................... Done
+*Novas* Loading libsscore_ius111.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for IUS, Release 2012.01, Linux x86_64/64bit, 01/12/2012
+Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior. Please contact SpringSoft support at  *
+*  support@springsoft.com for assistance.                             *
+***********************************************************************
+*Novas* : Create FSDB file 'CVAE.fsdb'
+*Novas* : Begin traversing the scopes, layer (0).
+*Novas* : End of traversing.
+Seqlens:  x
+Reset System
+Seqlens:  0
+Simulation Start
+Seqlens:  1
+Seqlens:  2
+Seqlens:  3
+Seqlens:  4
+Seqlens:  5
+Seqlens:  6
+Seqlens:  7
+Seqlens:  8
+Seqlens:  9
+Seqlens: 10
+Seqlens: 11
+Seqlens: 12
+Seqlens: 13
+Seqlens: 14
+Seqlens: 15
+Seqlens: 16
+Seqlens: 17
+Seqlens: 18
+Seqlens: 19
+Seqlens: 20
+Seqlens: 21
+Seqlens: 22
+Seqlens: 23
+Seqlens: 24
+Seqlens: 25
+Seqlens: 26
+Seqlens: 27
+Seqlens: 28
+Seqlens: 29
+Seqlens: 30
+Seqlens: 31
+Seqlens: 32
+Seqlens: 33
+Start checking Result...
+Using Cycles:      183825
+[CORRECT]: Seqlens:  33
+=============================
+          PASS!!          
+=============================
+Simulation complete via $finish(1) at time 4414308 NS + 3
+./CVAE_tb.v:408         $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Dec 29, 2021 at 22:31:51 CST  (total: 00:00:07)

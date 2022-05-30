@@ -1,0 +1,3 @@
+clock period 放寬到 5.8 ns
+core utilization = 0.3 
+其餘constrain比照lab10~12

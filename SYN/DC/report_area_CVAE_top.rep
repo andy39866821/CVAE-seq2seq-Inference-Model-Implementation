@@ -1,0 +1,168 @@
+ 
+****************************************
+Report : area
+Design : CVAE_top
+Version: R-2020.09-SP5
+Date   : Mon Jan 17 23:56:35 2022
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /usr/cadtool/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+
+Number of ports:                        22705
+Number of nets:                        108501
+Number of cells:                        77740
+Number of combinational cells:          57606
+Number of sequential cells:             19933
+Number of macros/black boxes:               0
+Number of buf/inv:                      14861
+Number of references:                      41
+
+Combinational area:             162312.113136
+Buf/Inv area:                    19160.932819
+Noncombinational area:          131965.546921
+Macro/Black Box area:                0.000000
+Net Interconnect area:          141977.670520
+
+Total cell area:                294277.660057
+Total area:                     436255.330577
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------------------------------------------
+CVAE_top                          294277.6601    100.0   42729.7391   56494.4340  0.0000  CVAE_top
+FC                                 11615.6513      3.9   10392.2021    1223.4492  0.0000  FullyConnection_ADDR_WIDTH16_DATA_WIDTH32
+gru                               183437.8357     62.3   16377.8015    1632.1128  0.0000  GRU_DATA_WIDTH32_QUAN24_CORDIC_QUAN16
+gru/sigmoid_0                      55479.3813     18.9     682.8849     211.4478  0.0000  Cordic_32_16_2a029999_0_0_mydesign_1
+gru/sigmoid_0/VLC_INST_0__vlc        562.6748      0.2     146.3869     416.2879  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K0_mydesign_2
+gru/sigmoid_0/VLC_INST_10__vlc      1131.9574      0.4     497.6139     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K10_mydesign_2
+gru/sigmoid_0/VLC_INST_11__vlc      1132.2115      0.4     497.8681     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K11_mydesign_2
+gru/sigmoid_0/VLC_INST_12__vlc      1153.3055      0.4     518.9620     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K12_mydesign_2
+gru/sigmoid_0/VLC_INST_13__vlc      1159.6591      0.4     525.3156     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K13_mydesign_2
+gru/sigmoid_0/VLC_INST_14__vlc      1171.0956      0.4     536.7521     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K14_mydesign_2
+gru/sigmoid_0/VLC_INST_15__vlc      1195.7475      0.4     561.4041     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K15_mydesign_2
+gru/sigmoid_0/VLC_INST_16__vlc      1182.7862      0.4     548.4427     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K16_mydesign_2
+gru/sigmoid_0/VLC_INST_17__vlc       994.7196      0.3     360.3762     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K17_mydesign_2
+gru/sigmoid_0/VLC_INST_18__vlc      1012.0014      0.3     377.6580     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K18_mydesign_2
+gru/sigmoid_0/VLC_INST_1__vlc        814.5315      0.3     385.0282     429.5034  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K1_mydesign_2
+gru/sigmoid_0/VLC_INST_2__vlc        857.7360      0.3     421.6249     436.1111  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K2_mydesign_2
+gru/sigmoid_0/VLC_INST_3__vlc       1099.1728      0.4     557.3378     541.8350  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K3_mydesign_2
+gru/sigmoid_0/VLC_INST_4__vlc       1027.7583      0.3     479.3156     548.4428  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K4_mydesign_2
+gru/sigmoid_0/VLC_INST_5__vlc       1028.7749      0.3     473.7244     555.0505  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K5_mydesign_2
+gru/sigmoid_0/VLC_INST_6__vlc       1039.4490      0.4     477.7907     561.6583  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K6_mydesign_2
+gru/sigmoid_0/VLC_INST_7__vlc       1121.0292      0.4     486.6857     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K7_mydesign_2
+gru/sigmoid_0/VLC_INST_8__vlc       1121.5375      0.4     487.1940     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K8_mydesign_2
+gru/sigmoid_0/VLC_INST_9__vlc       1130.9408      0.4     496.5974     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K9_mydesign_2
+gru/sigmoid_0/np_rhc0                565.2163      0.2     339.5364     225.6799  0.0000  NP_RHC_32_0005e449_16_mydesign_2
+gru/sigmoid_0/np_rhc1               1875.0744      0.6    1247.3387     627.7357  0.0000  NP_RHC_32_00031e41_8_mydesign_2
+gru/sigmoid_0/np_rhc2               2275.6054      0.8    1641.2619     634.3434  0.0000  NP_RHC_32_0001b78c_4_mydesign_2
+gru/sigmoid_0/np_rhc3               2431.9039      0.8    1797.5605     634.3434  0.0000  NP_RHC_32_0000f913_2_mydesign_2
+gru/sigmoid_0/p_rhc1                1719.7924      0.6    1085.4490     634.3434  0.0000  P_RHC_32_00008c9f_1_mydesign_2
+gru/sigmoid_0/p_rhc10               1617.3724      0.5     983.0290     634.3434  0.0000  P_RHC_32_00000040_10_mydesign_2
+gru/sigmoid_0/p_rhc11               1634.6542      0.6    1000.3108     634.3434  0.0000  P_RHC_32_00000020_11_mydesign_2
+gru/sigmoid_0/p_rhc12               1615.8476      0.5     981.5041     634.3434  0.0000  P_RHC_32_00000010_12_mydesign_2
+gru/sigmoid_0/p_rhc13_0             1602.6321      0.5     968.2886     634.3434  0.0000  P_RHC_32_00000008_13_mydesign_5
+gru/sigmoid_0/p_rhc13_1             1587.3834      0.5     953.0400     634.3434  0.0000  P_RHC_32_00000008_13_mydesign_4
+gru/sigmoid_0/p_rhc14               1615.5934      0.5     981.2500     634.3434  0.0000  P_RHC_32_00000004_14_mydesign_2
+gru/sigmoid_0/p_rhc15               1724.8753      0.6    1090.5319     634.3434  0.0000  P_RHC_32_00000002_15_mydesign_2
+gru/sigmoid_0/p_rhc2                1780.2787      0.6    1145.9353     634.3434  0.0000  P_RHC_32_00004162_2_mydesign_2
+gru/sigmoid_0/p_rhc3                1682.6874      0.6    1048.3440     634.3434  0.0000  P_RHC_32_0000202b_3_mydesign_2
+gru/sigmoid_0/p_rhc4_0              1693.6156      0.6    1059.2722     634.3434  0.0000  P_RHC_32_00001005_4_mydesign_5
+gru/sigmoid_0/p_rhc4_1              1659.5603      0.6    1025.2169     634.3434  0.0000  P_RHC_32_00001005_4_mydesign_4
+gru/sigmoid_0/p_rhc5                1447.3501      0.5     813.0066     634.3434  0.0000  P_RHC_32_00000800_5_mydesign_2
+gru/sigmoid_0/p_rhc6                1316.2118      0.4     681.8683     634.3434  0.0000  P_RHC_32_00000400_6_mydesign_2
+gru/sigmoid_0/p_rhc7                1599.0741      0.5     964.7306     634.3434  0.0000  P_RHC_32_00000200_7_mydesign_2
+gru/sigmoid_0/p_rhc8                1604.1569      0.5     969.8135     634.3434  0.0000  P_RHC_32_00000100_8_mydesign_2
+gru/sigmoid_0/p_rhc9                1599.0741      0.5     964.7306     634.3434  0.0000  P_RHC_32_00000080_9_mydesign_2
+gru/sigmoid_1                      55586.3759     18.9     680.8518     211.4478  0.0000  Cordic_32_16_2a029999_0_0_mydesign_0
+gru/sigmoid_1/VLC_INST_0__vlc        562.6748      0.2     146.3869     416.2879  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K0_mydesign_1
+gru/sigmoid_1/VLC_INST_10__vlc      1125.6038      0.4     491.2603     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K10_mydesign_1
+gru/sigmoid_1/VLC_INST_11__vlc      1132.2115      0.4     497.8681     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K11_mydesign_1
+gru/sigmoid_1/VLC_INST_12__vlc      1153.3055      0.4     518.9620     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K12_mydesign_1
+gru/sigmoid_1/VLC_INST_13__vlc      1162.2005      0.4     527.8571     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K13_mydesign_1
+gru/sigmoid_1/VLC_INST_14__vlc      1148.2226      0.4     513.8792     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K14_mydesign_1
+gru/sigmoid_1/VLC_INST_15__vlc      1194.4768      0.4     560.1334     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K15_mydesign_1
+gru/sigmoid_1/VLC_INST_16__vlc      1182.7862      0.4     548.4427     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K16_mydesign_1
+gru/sigmoid_1/VLC_INST_17__vlc       992.1782      0.3     357.8347     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K17_mydesign_1
+gru/sigmoid_1/VLC_INST_18__vlc       992.9406      0.3     358.5972     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K18_mydesign_1
+gru/sigmoid_1/VLC_INST_1__vlc        820.8851      0.3     391.3818     429.5034  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K1_mydesign_1
+gru/sigmoid_1/VLC_INST_2__vlc        857.7360      0.3     421.6249     436.1111  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K2_mydesign_1
+gru/sigmoid_1/VLC_INST_3__vlc       1099.1728      0.4     557.3378     541.8350  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K3_mydesign_1
+gru/sigmoid_1/VLC_INST_4__vlc       1030.2998      0.4     481.8570     548.4428  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K4_mydesign_1
+gru/sigmoid_1/VLC_INST_5__vlc       1039.1948      0.4     484.1443     555.0505  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K5_mydesign_1
+gru/sigmoid_1/VLC_INST_6__vlc       1052.1562      0.4     490.4979     561.6583  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K6_mydesign_1
+gru/sigmoid_1/VLC_INST_7__vlc       1133.7364      0.4     499.3929     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K7_mydesign_1
+gru/sigmoid_1/VLC_INST_8__vlc       1127.8911      0.4     493.5476     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K8_mydesign_1
+gru/sigmoid_1/VLC_INST_9__vlc       1137.2944      0.4     502.9510     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K9_mydesign_1
+gru/sigmoid_1/np_rhc0                564.9621      0.2     339.2822     225.6799  0.0000  NP_RHC_32_0005e449_16_mydesign_1
+gru/sigmoid_1/np_rhc1               1875.0744      0.6    1247.3387     627.7357  0.0000  NP_RHC_32_00031e41_8_mydesign_1
+gru/sigmoid_1/np_rhc2               2254.0031      0.8    1619.6597     634.3434  0.0000  NP_RHC_32_0001b78c_4_mydesign_1
+gru/sigmoid_1/np_rhc3               2447.4067      0.8    1813.0633     634.3434  0.0000  NP_RHC_32_0000f913_2_mydesign_1
+gru/sigmoid_1/p_rhc1                1752.0687      0.6    1117.7253     634.3434  0.0000  P_RHC_32_00008c9f_1_mydesign_1
+gru/sigmoid_1/p_rhc10               1602.1238      0.5     967.7803     634.3434  0.0000  P_RHC_32_00000040_10_mydesign_1
+gru/sigmoid_1/p_rhc11               1649.9028      0.6    1015.5594     634.3434  0.0000  P_RHC_32_00000020_11_mydesign_1
+gru/sigmoid_1/p_rhc12               1549.7701      0.5     915.4267     634.3434  0.0000  P_RHC_32_00000010_12_mydesign_1
+gru/sigmoid_1/p_rhc13_0             1607.7149      0.5     973.3715     634.3434  0.0000  P_RHC_32_00000008_13_mydesign_3
+gru/sigmoid_1/p_rhc13_1             1526.3889      0.5     892.0454     634.3434  0.0000  P_RHC_32_00000008_13_mydesign_2
+gru/sigmoid_1/p_rhc14               1615.5934      0.5     981.2500     634.3434  0.0000  P_RHC_32_00000004_14_mydesign_1
+gru/sigmoid_1/p_rhc15               1709.6267      0.6    1075.2832     634.3434  0.0000  P_RHC_32_00000002_15_mydesign_1
+gru/sigmoid_1/p_rhc2                1752.3229      0.6    1117.9794     634.3434  0.0000  P_RHC_32_00004162_2_mydesign_1
+gru/sigmoid_1/p_rhc3                1695.3946      0.6    1061.0512     634.3434  0.0000  P_RHC_32_0000202b_3_mydesign_1
+gru/sigmoid_1/p_rhc4_0              1674.0465      0.6    1039.7031     634.3434  0.0000  P_RHC_32_00001005_4_mydesign_3
+gru/sigmoid_1/p_rhc4_1              1698.6985      0.6    1064.3551     634.3434  0.0000  P_RHC_32_00001005_4_mydesign_2
+gru/sigmoid_1/p_rhc5                1623.2177      0.6     988.8743     634.3434  0.0000  P_RHC_32_00000800_5_mydesign_1
+gru/sigmoid_1/p_rhc6                1343.4052      0.5     709.0617     634.3434  0.0000  P_RHC_32_00000400_6_mydesign_1
+gru/sigmoid_1/p_rhc7                1604.1569      0.5     969.8135     634.3434  0.0000  P_RHC_32_00000200_7_mydesign_1
+gru/sigmoid_1/p_rhc8                1593.9912      0.5     959.6477     634.3434  0.0000  P_RHC_32_00000100_8_mydesign_1
+gru/sigmoid_1/p_rhc9                1609.2398      0.5     974.8964     634.3434  0.0000  P_RHC_32_00000080_9_mydesign_1
+gru/tanh                           54362.1642     18.5     541.5809     204.8401  0.0000  Cordic_32_16_2a029999_0_1
+gru/tanh/VLC_INST_0__vlc             562.6748      0.2     146.3869     416.2879  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K0_mydesign_0
+gru/tanh/VLC_INST_10__vlc           1131.9574      0.4     497.6139     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K10_mydesign_0
+gru/tanh/VLC_INST_11__vlc           1126.1121      0.4     491.7686     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K11_mydesign_0
+gru/tanh/VLC_INST_12__vlc           1153.3055      0.4     518.9620     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K12_mydesign_0
+gru/tanh/VLC_INST_13__vlc           1162.2005      0.4     527.8571     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K13_mydesign_0
+gru/tanh/VLC_INST_14__vlc           1109.0844      0.4     474.7410     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K14_mydesign_0
+gru/tanh/VLC_INST_15__vlc           1143.6480      0.4     509.3046     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K15_mydesign_0
+gru/tanh/VLC_INST_16__vlc           1180.2447      0.4     545.9013     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K16_mydesign_0
+gru/tanh/VLC_INST_17__vlc            988.3660      0.3     354.0226     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K17_mydesign_0
+gru/tanh/VLC_INST_18__vlc            995.4821      0.3     361.1386     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K18_mydesign_0
+gru/tanh/VLC_INST_1__vlc             820.8851      0.3     391.3818     429.5034  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K1_mydesign_0
+gru/tanh/VLC_INST_2__vlc             857.7360      0.3     421.6249     436.1111  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K2_mydesign_0
+gru/tanh/VLC_INST_3__vlc            1099.1728      0.4     557.3378     541.8350  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K3_mydesign_0
+gru/tanh/VLC_INST_4__vlc            1030.2998      0.4     481.8570     548.4428  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K4_mydesign_0
+gru/tanh/VLC_INST_5__vlc            1039.1948      0.4     484.1443     555.0505  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K5_mydesign_0
+gru/tanh/VLC_INST_6__vlc            1052.1562      0.4     490.4979     561.6583  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K6_mydesign_0
+gru/tanh/VLC_INST_7__vlc            1133.7364      0.4     499.3929     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K7_mydesign_0
+gru/tanh/VLC_INST_8__vlc            1127.8911      0.4     493.5476     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K8_mydesign_0
+gru/tanh/VLC_INST_9__vlc            1137.2944      0.4     502.9510     634.3434  0.0000  VLC_DATA_WIDTH32_CORDIC_QUAN16_K9_mydesign_0
+gru/tanh/np_rhc0                     419.8459      0.1     200.7738     219.0721  0.0000  NP_RHC_32_0005e449_16_mydesign_0
+gru/tanh/np_rhc1                    1943.1850      0.7    1322.0571     621.1280  0.0000  NP_RHC_32_00031e41_8_mydesign_0
+gru/tanh/np_rhc2                    2128.9643      0.7    1501.2286     627.7357  0.0000  NP_RHC_32_0001b78c_4_mydesign_0
+gru/tanh/np_rhc3                    2323.3844      0.8    1695.6487     627.7357  0.0000  NP_RHC_32_0000f913_2_mydesign_0
+gru/tanh/p_rhc1                     1702.7648      0.6    1075.0291     627.7357  0.0000  P_RHC_32_00008c9f_1_mydesign_0
+gru/tanh/p_rhc10                    1602.1238      0.5     967.7803     634.3434  0.0000  P_RHC_32_00000040_10_mydesign_0
+gru/tanh/p_rhc11                    1649.9028      0.6    1015.5594     634.3434  0.0000  P_RHC_32_00000020_11_mydesign_0
+gru/tanh/p_rhc12                    1549.7701      0.5     915.4267     634.3434  0.0000  P_RHC_32_00000010_12_mydesign_0
+gru/tanh/p_rhc13_0                  1620.4221      0.6     986.0787     634.3434  0.0000  P_RHC_32_00000008_13_mydesign_1
+gru/tanh/p_rhc13_1                  1539.0961      0.5     904.7526     634.3434  0.0000  P_RHC_32_00000008_13_mydesign_0
+gru/tanh/p_rhc14                    1615.5934      0.5     981.2500     634.3434  0.0000  P_RHC_32_00000004_14_mydesign_0
+gru/tanh/p_rhc15                    1650.6653      0.6    1016.3218     634.3434  0.0000  P_RHC_32_00000002_15_mydesign_0
+gru/tanh/p_rhc2                     1712.1681      0.6    1077.8247     634.3434  0.0000  P_RHC_32_00004162_2_mydesign_0
+gru/tanh/p_rhc3                     1667.4388      0.6    1033.0953     634.3434  0.0000  P_RHC_32_0000202b_3_mydesign_0
+gru/tanh/p_rhc4_0                   1660.8310      0.6    1026.4876     634.3434  0.0000  P_RHC_32_00001005_4_mydesign_1
+gru/tanh/p_rhc4_1                   1583.3171      0.5     948.9737     634.3434  0.0000  P_RHC_32_00001005_4_mydesign_0
+gru/tanh/p_rhc5                     1371.1069      0.5     736.7634     634.3434  0.0000  P_RHC_32_00000800_5_mydesign_0
+gru/tanh/p_rhc6                     1352.0461      0.5     717.7026     634.3434  0.0000  P_RHC_32_00000400_6_mydesign_0
+gru/tanh/p_rhc7                     1605.6818      0.5     971.3384     634.3434  0.0000  P_RHC_32_00000200_7_mydesign_0
+gru/tanh/p_rhc8                     1494.8750      0.5     860.5316     634.3434  0.0000  P_RHC_32_00000100_8_mydesign_0
+gru/tanh/p_rhc9                     1571.1182      0.5     936.7748     634.3434  0.0000  P_RHC_32_00000080_9_mydesign_0
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------------------------------------------
+Total                                                   162312.1131  131965.5469  0.0000
+
+1
